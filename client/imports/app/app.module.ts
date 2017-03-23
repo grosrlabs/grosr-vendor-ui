@@ -6,11 +6,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from "./app.component";
 import { DashboardModule } from "./dashboard/dashboard.module";
 import { LoginComponent } from "./login/login.component";
+import { RegisterComponent } from "./register/register.component";
+import { ForgotPasswordComponent } from "./forgotpassword/forgotpassword.component";
 
 const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'forgotpassword',
+    component: ForgotPasswordComponent
   }
 ];
 
@@ -18,7 +28,9 @@ const appRoutes: Routes = [
   // Components, Pipes, Directive
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    ForgotPasswordComponent
   ],
   // Entry Components
   entryComponents: [

@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="offset-md-7 col-xs-12 col-sm-12 col-md-4 login">
+    <div class="offset-md-7 col-xs-12 col-sm-12 col-md-4 register">
         <div class="form-group form-group-with-icon">
             <i class="fa fa-user text-primary"></i>
             <input type="text" [(ngModel)]="username" name="username" class="form-control" placeholder="Enter email" />
@@ -8,21 +8,20 @@
             <i class="fa fa-lock text-primary"></i>
             <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Password" />
         </div>
-        <div class="form-group">
-            <button class="btn btn-primary form-control" (click)="submit()">Sign In</button>
+        <div class="form-group form-group-with-icon">
+            <i class="fa fa-lock text-primary"></i>
+            <input type="password" [(ngModel)]="confirmpassword" name="confirmpassword" class="form-control" placeholder="Confirm Password" />
         </div>
-        <div class="row">
-            <div class="col-sm-12 text-right">
-                <a [routerLink]="['/forgotpassword']" >Forgot your password?</a>
-            </div>
+        <div class="form-group">
+            <button class="btn btn-primary form-control" (click)="submit()">Sign Up</button>
         </div>
         <hr/>
         <div class="row text-center">
             <div class="col-sm-12">
-                <h5 class="header-registration">Want to be a grosr vendor?</h5>
+                <h5 class="header-registration">Already have an account?</h5>
             </div>
             <div class="col-sm-12">
-                <a [routerLink]="['/register']" class="btn btn-info">Join the club!</a>
+                <a [routerLink]="['/login']" class="btn btn-info">Sign In!</a>
             </div>
         </div>
     </div>
