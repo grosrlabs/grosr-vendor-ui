@@ -1,3 +1,10 @@
 /* CSS declarations go here */
-//$brand-primary:#8BC34A;
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,700');
+@import './styles/_variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
+@import './styles/components/_form';
+@import './styles/components/_awesome-checkbox';
+
+body{
+    background-color: #f4f7f6;
+}

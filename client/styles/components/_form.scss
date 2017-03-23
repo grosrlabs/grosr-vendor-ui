@@ -1,0 +1,13 @@
+.form-control{
+    font-family: $font-family-base;
+    font-weight:100;
+}
+.form-group-with-icon{
+    .fa{
+        position: absolute;
+        margin: 11px 15px;
+    }
+    .form-control{
+        padding-left:35px;
+    }
+}
