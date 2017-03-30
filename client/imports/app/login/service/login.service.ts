@@ -14,7 +14,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class LoginService {
-private loginUrl = 'http://api.grosr.com:8080/api/v1/auth/login';  // URL to web API
+private loginUrl = 'http://localhost:8080/api/v1/auth/login';  // URL to web API
 private logoutUrl = 'api/v1/logout'; // URL to web API
     constructor (private http: Http) {}
     validateLogin (username: string,password: string): Observable<any> {
